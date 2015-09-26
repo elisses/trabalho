@@ -1,0 +1,24 @@
+body{
+	background-image: url(foto.jpg);
+
+}
+
+div form{
+	border:5px solid ;
+	padding: 20px;
+	margin: 0px;
+	background-color: black;
+	color:white;
+	font-size: 10px;
+	font-family: "Verdana";
+}
+
+main h1{
+	font-family: "Arial";
+	background-color: #851944;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin: 0px;
+
+}

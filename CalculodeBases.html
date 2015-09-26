@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="controle.js"></script>
+	<script type="text/javascript" src="calculo.js"></script>
+	<script type="text/javascript" src="calculoHexadecimal.js"></script>
+
+	<script type="text/javascript">
+
+			/*function changeBin(){
+				var binario = document.getElementById("binario").value;
+				if (binario != "" ){
+						document.getElementById("decimal").disabled = "disabled";
+						document.getElementById("hexadecimal").disabled = "disabled";
+				} else {
+
+						document.getElementById("decimal").disabled = "";
+						document.getElementById("hexadecimal").disabled = "";
+
+					};
+
+
+			};
+
+			function changeDec(){
+				var decimal = document.getElementById("decimal").value;
+				if (decimal != "" ){
+						document.getElementById("binario").disabled = "disabled";
+						document.getElementById("hexadecimal").disabled = "disabled";
+						
+				}else {
+
+						document.getElementById("binario").disabled = "";
+						document.getElementById("hexadecimal").disabled = "";
+
+				}
+
+			};
+
+			function changeHex(){
+				var hexadecimal = document.getElementById("hexadecimal").value;
+				if (hexadecimal != "" ){
+						document.getElementById("decimal").disabled = "disabled";
+						document.getElementById("binario").disabled = "disabled";
+						
+				}else {
+
+						document.getElementById("decimal").disabled = "";
+						document.getElementById("binario").disabled = "";
+						
+					};
+
+			};*/
+
+			function myFunction() {
+   				 document.getElementById("myForm").reset();
+			};
+				
+
+			
+			
+
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="stilo.css">
+
+	<title>Document</title>
+
+</head>
+<body>
+	<main>
+		
+		<h1>Conversor de BASES</h1>
+
+	
+
+		<div id="formulario">
+			<form id="myForm">
+				<label>Decimal: </label> 
+				
+				<input id= "decimal" placeholder= "1250" onChange="changeDec()" type="text" name="valor">
+				<label>Binário: </label>
+				
+				<input id="binario" placeholder="10011100010" onChange="changeBin()" type="text" name="valor">
+				<label>Hexadecimal: </label>
+				
+				<input id="hexadecimal" placeholder="4E2" onChange="changeHex()" type="text" name="valor">
+				<input type="button" onClick="controle()"  name="Botão OK" value = "Converter">
+				<input  type="button"  value="Limpar" onclick="myFunction()" name="btLimpar">
+
+
+			</form>
+		</div>
+	
+	</main>
+</body>
+</html>
